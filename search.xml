@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[给我起个名字吧]]></title>
     <url>%2F%E9%9A%8F%E4%BE%BF%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88%2F%E9%9A%8F%E4%BE%BF%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88%2F</url>
-    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://vodkgeyttp8.vod.126.net/cloudmusic/MWEhIDEgYjAkITFhMCIgMA==/mv/5449021/d05de38508ea3d7f88fddb8691ccf0e9.mp4?wsSecret=af79db4fea0d2c728d852503bda23d9d&wsTime=1552621682"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"http://vodkgeyttp8.vod.126.net/cloudmusic/MWEhIDEgYjAkITFhMCIgMA==/mv/5449021/d05de38508ea3d7f88fddb8691ccf0e9.mp4?wsSecret=d2e6ae15f1b5c415cc74679cedcd5677&wsTime=1552637011"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
         <category>随便写点什么</category>
       </categories>
