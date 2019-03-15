@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[改css]]></title>
-    <url>%2F%E7%BB%99%E6%88%91%E8%B5%B7%E4%B8%AA%E5%90%8D%E5%AD%97%E5%90%A7%2F%E7%BB%99%E6%88%91%E8%B5%B7%E4%B8%AA%E5%90%8D%E5%AD%97%E5%90%A7%2F</url>
-    <content type="text"><![CDATA[头痛 改css..]]></content>
+    <title><![CDATA[给我起个名字吧]]></title>
+    <url>%2F%E9%9A%8F%E4%BE%BF%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88%2F%E9%9A%8F%E4%BE%BF%E5%86%99%E7%82%B9%E4%BB%80%E4%B9%88%2F</url>
+    <content type="text"><![CDATA[(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"https://vodkgeyttp8.vod.126.net/cloudmusic/MWEhIDEgYjAkITFhMCIgMA==/mv/5449021/d05de38508ea3d7f88fddb8691ccf0e9.mp4?wsSecret=af79db4fea0d2c728d852503bda23d9d&wsTime=1552621682"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
       <categories>
-        <category>给我起个名字吧</category>
+        <category>随便写点什么</category>
       </categories>
       <tags>
-        <tag>css</tag>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[你好，Hexo]]></title>
-    <url>%2F%E7%BB%99%E6%88%91%E8%B5%B7%E4%B8%AA%E5%90%8D%E5%AD%97%E5%90%A7%2Fa%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[django快速入门]]></title>
+    <url>%2F%E6%8A%80%E6%9C%AF%2Fdjango%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[前言MVC 大部分的开发语言中都有MVC框架 MVC框架的核心思想是：解耦 降低各种功能模块之间的耦合性，方便变更，更容易重构代码 搭建开发环境##]]></content>
       <categories>
-        <category>给我起个名字吧</category>
+        <category>技术</category>
       </categories>
       <tags>
-        <tag>你好</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[你好，Hexo]]></title>
-    <url>%2F%E7%BB%99%E6%88%91%E8%B5%B7%E4%B8%AA%E5%90%8D%E5%AD%97%E5%90%A7%2F%E4%BD%A0%E5%A5%BD%EF%BC%8CHexo%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>给我起个名字吧</category>
-      </categories>
-      <tags>
-        <tag>你好</tag>
+        <tag>python</tag>
+        <tag>web开发</tag>
+        <tag>django</tag>
       </tags>
   </entry>
   <entry>
