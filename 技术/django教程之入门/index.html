@@ -1,0 +1,333 @@
+<!DOCTYPE html><html class="theme-next muse use-motion" lang="zh-Hans"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><script src="/lib/pace/pace.min.js?v=1.0.2"></script><link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4"><link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222"><meta name="keywords" content="python,web开发,django,"><meta name="keywords" content="python,web开发,django"><meta property="og:type" content="article"><meta property="og:title" content="django教程之入门"><meta property="og:url" content="https://rookie6.github.io/技术/django教程之入门/index.html"><meta property="og:site_name" content="rookie6"><meta property="og:locale" content="zh-Hans"><meta property="og:image" content="https://rookie6.github.io/技术/django教程之入门/django.jpg"><meta property="og:image" content="https://rookie6.github.io/技术/django教程之入门/开发过程.png"><meta property="og:image" content="https://rookie6.github.io/技术/django教程之入门/index.png"><meta property="og:image" content="https://rookie6.github.io/技术/django教程之入门/设计.png"><meta property="og:image" content="https://rookie6.github.io/技术/django教程之入门/index1.png"><meta property="og:image" content="https://rookie6.github.io/技术/django教程之入门/a.png"><meta property="og:image" content="https://rookie6.github.io/技术/django教程之入门/b.png"><meta property="og:updated_time" content="2019-03-16T15:25:29.819Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="django教程之入门"><meta name="twitter:image" content="https://rookie6.github.io/技术/django教程之入门/django.jpg"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Muse",version:"5.1.4",sidebar:{position:"left",display:"post",offset:12,b2t:!1,scrollpercent:!0,onmobile:!0},fancybox:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="https://rookie6.github.io/技术/django教程之入门/"><title>django教程之入门 | rookie6</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">rookie6</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">less is more</p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> 首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> 标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i><br> 分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br> 归档</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br> 关于</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br> 搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i></span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"> <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="https://rookie6.github.io/技术/django教程之入门/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="rookie6"><meta itemprop="description" content><meta itemprop="image" content="/images/blog-logo.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="rookie6"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">django教程之入门</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-14T19:40:27+08:00">2019-03-14</time> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i></span> <span class="post-meta-item-text">更新于&#58;</span> <time title="更新于" itemprop="dateModified" datetime="2019-03-16T23:25:29+08:00">2019-03-16</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span><a href="/技术/django教程之入门/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/技术/django教程之入门/" itemprop="commentCount"></span></a></span> <span class="post-meta-divider">|</span><span class="page-pv"><i class="fa fa-file-o"></i> 阅读次数<span class="busuanzi-value" id="busuanzi_value_page_pv"></span></span><div class="post-wordcount"><span class="post-meta-item-icon"><i class="fa fa-file-word-o"></i></span> <span class="post-meta-item-text">字数统计&#58;</span> <span title="字数统计">1.4k</span> <span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-clock-o"></i></span> <span class="post-meta-item-text">阅读时长 &asymp;</span> <span title="阅读时长">5</span></div></div></header><div class="post-body" itemprop="articleBody"><p><img src="/技术/django教程之入门/django.jpg" alt style="width:100%"></p><a id="more"></a><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>MVC</strong></p><ul><li>大部分的开发语言中都有MVC框架</li><li>MVC框架的核心思想是：解耦</li><li>降低各种功能模块之间的耦合性，方便变更，更容易重构代码,最大程度上实现代码的重用</li><li>m表示model，主要用于对数据库层的封装</li><li>v表示view，用于向用户展示结果</li><li>c表示controller，是核心，用于处理请求、获取数据、返回结果</li></ul><p><strong>MVT</strong></p><ul><li>Django是一款python的web开发框架</li><li>与MVC有所不同，属于MVT框架</li><li>m表示model,负责与数据库交互</li><li>v表view，是核心，负责接收请求、获取数据、返回结果</li><li><p>t表示template，负责呈现内容到浏览器</p><p><img src="/技术/django教程之入门/开发过程.png" alt="开发过程"></p></li></ul><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><h3 id="搭建开发环境"><a href="#搭建开发环境" class="headerlink" title="搭建开发环境"></a>搭建开发环境</h3><ol><li>安装Django</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install django</span><br></pre></td></tr></table></figure><p>检测安装是否成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">python </span><br><span class="line">import django</span><br><span class="line">django.VERSION</span><br></pre></td></tr></table></figure><ol start="2"><li>在虚拟环境中创建Django项目</li></ol><p>打开pycharm专业版，创建项目test1虚拟环境，进入test1目录，目录结构如下<br><img src="/技术/django教程之入门/index.png" alt="在这里插入图片描述"></p><ul><li>manage.py: 一个命令行工具，可以使你用多种方式对DJang项目进行交互</li><li>内层的目录： 项目真正的Python包</li><li>__init__.py: 一个空文件，它告诉python这个目录应该被看做一个Python包</li><li>settings.py: 项目的配置</li><li>urls.py: 项目的URL声明</li><li>wsgi.py: 项目与WSGI兼容的Web服务器入口</li></ul><p><a href="https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/content/django/installation.html" target="_blank" rel="noopener">命令行安装的方法</a></p><h3 id="设计模型"><a href="#设计模型" class="headerlink" title="设计模型"></a>设计模型</h3><p><img src="/技术/django教程之入门/设计.png" alt="设计介绍"><br><strong>数据库配置</strong></p><ul><li>在setting.py文件中，通过DATABASES项进行数据库设置</li><li>django支持的数据库包括：sqlite,mysql,等主流数据库</li><li>Django默认使用SQLite数据库</li></ul><p><strong>创建应用</strong></p><ul><li>在一个项目中可以创建一到多个应用，每个应用进行一种业务处理</li><li>创建应用的命令：</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py startapp booktest</span><br></pre></td></tr></table></figure><ul><li>应用的目录结构如下图<br><img src="/技术/django教程之入门/index1.png" alt="在这里插入图片描述"></li></ul><p><strong>定义模型类</strong></p><ul><li>有一个数据表，就有一个模型类与之对应</li><li>打开models.py文件，定义模型类</li><li>引入包 from django.db import models</li><li>模型类继承自models.Model类</li><li>说明：不需要定义主键列，在生成是自动添加，并且值为自动增长</li><li>当输出对象时，会调用对象的str方法</li></ul><p><img src="/技术/django教程之入门/a.png" alt="开发过程"></p><p><strong>生成数据表</strong></p><ul><li>激活模型：编辑setting.py文件，将booktest应用加入到install_apps中</li><li>生成迁移文件：根据模型类生成sql语句</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py makemigrations</span><br></pre></td></tr></table></figure><ul><li>将迁移文件被生成到应用的migrations目录</li><li>执行迁移：执行sql语句生成数据表</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py migrate</span><br></pre></td></tr></table></figure><p><strong>服务器</strong></p><ul><li>运行命令</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage..py runserver</span><br></pre></td></tr></table></figure><h3 id="管理站点"><a href="#管理站点" class="headerlink" title="管理站点"></a>管理站点</h3><p><strong>管理操作</strong></p><ul><li>站点分为“内容发布”和“公共访问”两部分</li><li>“内容发布”的部分负责添加、修改、删除内容，开发这些重复的功能是一件单调乏味、缺乏创造力的工作、为此，Django会根据定义的模型类完全自动生成管理模块</li></ul><p><strong>使用django的管理</strong></p><ul><li>创建一个管理员用户</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python manage.py createsuperuser, 按提示输入用户名、邮箱、密码</span><br></pre></td></tr></table></figure><ul><li>启动服务器，进入管理站点，默认可以对groups、users进行管理</li></ul><p><strong>管理界面本地化</strong></p><ul><li>编辑setting.py文件，设置编码、时区</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">LANGUAGE_CODE = &apos;zh-Hans&apos;</span><br><span class="line">TIME-ZONE = &apos;Asia/Shanghai&apos;</span><br></pre></td></tr></table></figure><p><strong>向admin注册booktest的模型</strong></p><ul><li>打开booktest/admin.py文件，注册模型</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from django.contrib import admin</span><br><span class="line">from model import BookInfo</span><br><span class="line">admin.site.register(BookInfo)</span><br></pre></td></tr></table></figure><ul><li>刷新管理界面，可以对BookInfo的数据进行增删改查操作</li><li>问题：如果str方法中返回中文，在修改和添加时会报ascii的错误</li><li>解决：在str()方法中，将字符串末尾添加“.encode(“utf-8”)”</li></ul><p><strong>自定义管理页面</strong></p><ul><li>Django提供了admin.ModelAdmin类</li><li>通过定义ModelAdmin的子类，来定义模型在Admin界面的显示方式</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class QuestionAdmin(admin.ModelAdmin):</span><br><span class="line">	...</span><br><span class="line">admin.site.register(Question,QuestionAdmin)</span><br></pre></td></tr></table></figure><p><strong>列表页属性</strong></p><ul><li>list_display: 显示字段,可以点击列头进行排序</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_display = [&apos;pk&apos;,&apos;btitle&apos;,&apos;bpub_data&apos;]</span><br></pre></td></tr></table></figure><ul><li>list_filter: 过滤字段，过滤款会出现在右侧</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_filter = [&apos;btittle&apos;]</span><br></pre></td></tr></table></figure><ul><li>search_fields: 搜索字段，搜索框会出现在上侧</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">search_fields = [&apos;btitle&apos;]</span><br></pre></td></tr></table></figure><ul><li>list_per_page: 分页，分页框会出现在下侧</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">list_per_page = 10</span><br></pre></td></tr></table></figure><p><strong>添加、修改页属性</strong></p><ul><li>fields: 属性的先后顺序</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fields = [&apos;bpub_date&apos;, &apos;btitle&apos;]</span><br></pre></td></tr></table></figure><ul><li>fieldsets: 属性分组</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fieldsets = [</span><br><span class="line">	(&apos;basic&apos;,&#123;&apos;fields&apos;:[&apos;btitle&apos;]&#125;),</span><br><span class="line">	(&apos;more&apos;,&#123;&apos;fields&apos;:[&apos;bpub_date&apos;]&#125;),</span><br><span class="line">]</span><br></pre></td></tr></table></figure><p><strong>关联对象</strong></p><ul><li>对于HeroInfo模型类，有两种注册方式<br> 方式一：与BookInfo模型类相同<br> 方式二：关联注册</li></ul><h3 id="视图"><a href="#视图" class="headerlink" title="视图"></a>视图</h3><ul><li>在django中，视图对web请求进行回应</li><li>视图接受request对象作为第一个参数，包含了请求的信息</li><li>视图就是一个python函数，被定义在view.py中</li><li>定义完视图后，需要配置urlconf,否则无法处理请求</li></ul><p><strong>URLconf</strong></p><ul><li>在django中，定义URLconf包括正则表达式、视图两部分</li><li>Django使用正则表达式匹配请求的URL，一旦匹配成功，则调用应用的视图</li><li>注意：只匹配路径部分，即除去域名、参数后的字符串</li><li>在test/urls.py插入booktest，使主urlconf连接到booktest.urls模块</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url(r&apos;^&apos;,include(&apos;booktest.urls&apos;)),</span><br></pre></td></tr></table></figure><ul><li>在booktest中的urls.py中添加urlconf</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from django.conf.urls import url </span><br><span class="line">from .import views</span><br><span class="line">urlpatterns = [</span><br><span class="line">	url(r&apos;^$&apos;,views.index),</span><br><span class="line">	url(r&apos;^([0-9+])/$&apos;,views.detail),</span><br><span class="line">]</span><br></pre></td></tr></table></figure><h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><ul><li>模板是HTML页面，可以根据视图中传递的数据填充值</li><li>创建模板的目录下图<br><img src="/技术/django教程之入门/b.png" alt="在这里插入图片描述"></li><li>修改setting.py文件，设置TEMPLATES的DIRS值</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;DIRS&apos;: [os.path.join(BASE_DIR,&apos;templates&apos;)]，</span><br></pre></td></tr></table></figure><ul><li>在模板中访问视图传递的数据</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;输出值，可以是变量，也可以是对象，属性&#125;&#125;</span><br><span class="line">&#123; % 执行代码 % &#125;</span><br></pre></td></tr></table></figure><hr></div><div><ul class="post-copyright"><li class="post-copyright-author"> <strong>本文作者：</strong> rookie6</li><li class="post-copyright-link"> <strong>本文链接：</strong> <a href="https://rookie6.github.io/技术/django教程之入门/" title="django教程之入门">https://rookie6.github.io/技术/django教程之入门/</a></li><li class="post-copyright-license"> <strong>版权声明：</strong> 本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a><a href="/tags/web开发/" rel="tag"><i class="fa fa-tag"></i> web开发</a><a href="/tags/django/" rel="tag"><i class="fa fa-tag"></i> django</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/随便写点什么/随便写点什么/" rel="prev" title="给我起个名字吧"><i class="fa fa-chevron-left"></i> 给我起个名字吧</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/技术/hello-world/" rel="next" title="Hello World">Hello World<i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div><div><div style="text-align:center;color:#ccc;font-size:14px">-------------本文结束啦<i class="fa fa-paw"></i>感谢您的阅读-------------</div></div></div><div class="post-spread"></div></div></div><div class="comments" id="comments"></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div id="sidebar-dimmer"></div><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap"> 站点概览</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/images/blog-logo.jpg" alt="rookie6"><p class="site-author-name" itemprop="name">rookie6</p><p class="site-description motion-element" itemprop="description">talk is cheap,show me the code</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives/"><span class="site-state-item-count">3</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <a href="/categories/index.html"><span class="site-state-item-count">2</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">5</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/rookie6" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span></div><div class="links-of-blogroll motion-element links-of-blogroll-inline"><div class="links-of-blogroll-title"><i class="fa fa-fw fa-link"></i> 友情链接</div><ul class="links-of-blogroll-list"><li class="links-of-blogroll-item"> <a href="https://blog.todest.cn/" title="guo" target="_blank">guo</a></li><li class="links-of-blogroll-item"> <a href="https://asbBoy1.github.io/" title="asbBoy1" target="_blank">asbBoy1</a></li><li class="links-of-blogroll-item"> <a href="https://baidu.com/" title="biadu" target="_blank">biadu</a></li><li class="links-of-blogroll-item"> <a href="http://theme-next.iissnan.com/" title="NexT" target="_blank">NexT</a></li></ul></div><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=31053708&auto=1&height=66"></iframe></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#入门"><span class="nav-number">2.</span> <span class="nav-text">入门</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建开发环境"><span class="nav-number">2.1.</span> <span class="nav-text">搭建开发环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设计模型"><span class="nav-number">2.2.</span> <span class="nav-text">设计模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理站点"><span class="nav-number">2.3.</span> <span class="nav-text">管理站点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#视图"><span class="nav-number">2.4.</span> <span class="nav-text">视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板"><span class="nav-number">2.5.</span> <span class="nav-text">模板</span></a></li></ol></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2019</span><span class="with-love" id="heart"><i class="fa fa-heart"></i></span> <span class="author" itemprop="copyrightHolder">rookie6</span></div><div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4<span>　<i class="fa fa-bomb"></i></span><span id="showDays"></span></div><script>var seconds=1e3,minutes=60*seconds,hours=60*minutes,days=24*hours,years=365*days,birthDay=Date.UTC(2019,2,22,0,0,0);setInterval(function(){var e=new Date,s=e.getFullYear(),t=e.getMonth()+1,a=e.getDate(),o=e.getHours(),r=e.getMinutes(),n=e.getSeconds(),h=Date.UTC(s,t,a,o,r,n)-birthDay,u=Math.floor(h/years),d=Math.floor(h/days-365*u),y=Math.floor((h-(365*u+d)*days)/hours),i=Math.floor((h-(365*u+d)*days-y*hours)/minutes),l=Math.floor((h-(365*u+d)*days-y*hours-i*minutes)/seconds);document.getElementById("showDays").innerHTML="已运行 "+u+" 年 "+d+" 天 "+y+" 小时 "+i+" 分钟 "+l+" 秒"},1e3)</script><div class="busuanzi-count"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span class="site-uv"><i class="fa fa-user"></i> 访问人数<span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span><span class="site-pv"><i class="fa fa-eye"></i> 总访问量<span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//unpkg.com/valine/dist/Valine.min.js"></script><script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'etOcY4pWiK3dA1ctxKod8d2C-gzGzoHsz',
+        appKey: '6fnq1FikVq3wTNWxUMCf6LgW',
+        placeholder: 'ヾﾉ≧∀≦)老铁，你不想说两句吗？',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script><script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script><link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css"><script src="/lib/needsharebutton/needsharebutton.js"></script><script></script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({pluginRootPath:"live2dw/",pluginJsPath:"lib/",pluginModelPath:"assets/",tagMode:!1,log:!1,model:{jsonPath:"/live2dw/assets/shizuku.model.json"},display:{position:"left",width:150,height:300},mobile:{show:!0}})</script></body></html><script type="text/javascript" src="/js/src/clicklove.js"></script><script type="text/javascript" src="/js/src/crash_cheat.js"></script>
